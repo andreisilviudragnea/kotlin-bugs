@@ -2,7 +2,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     java
-    kotlin("jvm") version "1.4.31"
+    kotlin("jvm") version "1.7.0"
 }
 
 group = "com.example"
@@ -18,9 +18,10 @@ dependencies {
     implementation("com.fasterxml.jackson.core:jackson-annotations:2.12.3")
 }
 
-configure<JavaPluginConvention> {
-    sourceCompatibility = JavaVersion.VERSION_15
+configure<JavaPluginExtension> {
+    sourceCompatibility = JavaVersion.VERSION_17
 }
+
 tasks.withType<KotlinCompile> {
-    kotlinOptions.jvmTarget = "11"
+    kotlinOptions.jvmTarget = "17"
 }
