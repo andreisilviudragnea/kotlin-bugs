@@ -15,7 +15,7 @@ repositories {
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
-    implementation("com.fasterxml.jackson.core:jackson-annotations:2.14.2")
+    implementation("com.fasterxml.jackson.core:jackson-annotations:2.15.0")
 }
 
 configure<JavaPluginExtension> {
