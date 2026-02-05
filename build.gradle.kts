@@ -2,7 +2,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     java
-    kotlin("jvm") version "2.1.21"
+    kotlin("jvm") version "2.3.10"
 }
 
 group = "com.example"
